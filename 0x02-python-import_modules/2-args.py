@@ -1,17 +1,17 @@
 #!/usr/bin/python3
 def print_arg(argv):
-    n = len(sys.argv) - 1
+    n = len(argv) - 1
     if n == 0:
-        print("{} argument.".format(n))
+        print("{:d} argument.".format(n))
         return
     else:
         if n == 1:
-            print("{} argument:".format(n))
+            print("{:d} argument:".format(n))
         else:
-            print("{} arguments:".format(n))
+            print("{:d} arguments:".format(n))
         i = 1
         while i <= n:
-            print("{}: {}".format(i, argv[i]))
+            print("{:d}: {:s}".format(i, argv[i]))
             i += 1
 
 
