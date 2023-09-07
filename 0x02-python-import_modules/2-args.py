@@ -13,6 +13,7 @@ def print_arg(argv):
             else:
                 print("{}: {}".format(i, argvalues[i]))
 
+
 if __name__ == "__main__":
     import sys
     print_arg(sys.argv)
