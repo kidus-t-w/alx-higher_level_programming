@@ -1,17 +1,18 @@
 #!/usr/bin/python3
 def print_arg(argv):
-    argvalues = sys.argv
-    for i in range(1, len(argvalues)):
-        if len(argvalues) == 2:
-            print("1 argument:\n1: {}".format(argvalues[1]))
-        elif len(argvalues) == 1:
-            print(".")
-        elif len(argvalues) > 2:
-            if i == 1:
-                print("{} arguments".format(len(argvalues) - 1))
-                print("{}: {}".format(i, argvalues[i]))
-            else:
-                print("{}: {}".format(i, argvalues[i]))
+    n = len(sys.argv) - 1
+    if n == 0:
+        print("{} argument.".format(n))
+        return
+    else:
+        if n == 1:
+            print("{} argument:".format(n))
+        else:
+            print("{} arguments:".format(n))
+        i = 1
+        while i <= n:
+            print("{}: {}".format(i, argv[i]))
+            i += 1
 
 
 if __name__ == "__main__":
