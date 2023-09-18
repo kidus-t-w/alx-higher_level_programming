@@ -4,4 +4,5 @@ def simple_del(a_dictionary, key=""):
         return a_dictionary
     elif key in a_dictionary:
         del a_dictionary[key]
-        return a_dictionary
+        new_dictionary = a_dictionary
+        return new_dictionary
