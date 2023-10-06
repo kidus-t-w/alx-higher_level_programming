@@ -3,11 +3,12 @@
 
 
 class Square:
-    """
-    Initlizes a squre
-
-    Args:
-        size (int): Number to be squred
-    """
+    """Represents a squre"""
     def __init__(self, size):
-        self.size = size
+        """
+        Initlizes a squre
+
+        Args:
+            size (int): Number to be squred
+        """
+        self.__size = size
