@@ -9,6 +9,3 @@ class Square:
     """
     def __init__(self, num):
         self.num = num
-    def cal_squ(self):
-        return self.num ** 2
-    
