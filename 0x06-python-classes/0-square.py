@@ -1,11 +1,6 @@
 #!/usr/bin/python3
+"""Defining a class Square."""
 class Square:
     """
-    This function takes an argument and returns the squre 
-    Args:
-        a(int): The first number
-    Returns:
-        int: The su quare of a number
+    Represent a square
     """
-    def __init__(self, num):
-        self.num = num
