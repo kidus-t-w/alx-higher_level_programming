@@ -1,3 +1,9 @@
 #!/usr/bin/python3
 class Square:
-    """A class that creats a square"""
+    """
+    This function takes an argument and returns the squre 
+    Args:
+        a(int): The first number
+    Returns:
+        int: The su quare of a number
+    """
