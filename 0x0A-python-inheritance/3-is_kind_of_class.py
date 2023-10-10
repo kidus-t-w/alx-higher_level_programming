@@ -1,4 +1,4 @@
-#!/bin/usr/python3
+#!/usr/bin/python3
 """
 Module: 3-is_kind_of_class.py
 """
