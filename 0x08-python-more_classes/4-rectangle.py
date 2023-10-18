@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-Module: 3-rectangle.py
+Module: 4-rectangle.py
 """
 
 
@@ -71,3 +71,7 @@ class Rectangle:
             if column < self.__height - 1:
                 rectangle += "\n"
         return (rectangle)
+
+    def __repr__(self):
+        return "Rectangle(" + str(self.__width) + ", \
+            " + str(self.__height) + ")"
