@@ -23,3 +23,12 @@ class BaseGeometry:
             raise TypeError("{} must be an integer".format(name))
         if value <= 0:
             raise ValueError("{} must be greater than 0".format(name))
+        else:
+            return True
+
+class Rectangle(BaseGeometry):
+    def __init__(self, width, height):
+
+        self.__width = width
+        self.__height = height
+
