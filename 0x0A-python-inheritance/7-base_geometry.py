@@ -22,9 +22,9 @@ class BaseGeometry:
             value (int): The parameter to balidate
         Raises:
             TypeError: If value is not an integer.
-            ValueError:If vavlue is <=0
+            ValueError:If vavlue is <=
         """
         if type(value) != int:
-            raise TypeError("{} must be an intiger".format(name))
-        elif value <= 0:
+            raise TypeError("{} must be an integer".format(name))
+        if value <= 0:
             raise ValueError("{} must be greater than 0".format(name))
