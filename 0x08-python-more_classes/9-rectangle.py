@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-Module: 8-rectangle.py
+Module: 9-rectangle.py
 """
 
 
@@ -97,3 +97,5 @@ class Rectangle:
             return rect_2
         else:
             return rect_1
+    def square(cls, size=0):
+        return Rectangle(size, size)
