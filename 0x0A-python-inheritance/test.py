@@ -8,3 +8,12 @@ if inherits_from(a, bool):
     print("{} inherited from class {}".format(a, bool.__name__))
 if inherits_from(a, object):
     print("{} inherited from class {}".format(a, object.__name__))
+#!/usr/bin/python3
+BaseGeometry = __import__('6-base_geometry').BaseGeometry
+
+bg = BaseGeometry()
+
+try:
+    print(bg.area())
+except Exception as e:
+    print("[{}] {}".format(e.__class__.__name__, e))
