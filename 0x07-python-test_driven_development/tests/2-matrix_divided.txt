@@ -1,0 +1,15 @@
+==============================
+How to use 2-matrix_divided.py
+==============================
+
+This module defines an integer addition function ``matrix_divided(matrix, div)``.
+
+Usage
+=====
+
+``matrix_divided(...)``` returns the division of the lists in the matrix. For matrix,
+that value is equivalent to using the ``-`` operator.
+
+::
+    >>> matrix_divided = __import__('2-matrix_divided').matrix_divided
+    >>> matrix_divided()

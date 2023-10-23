@@ -1,12 +1,12 @@
-#!/usr/bin/python3
-"""
-function that reads a text file
-"""
+#!/usr/bin/puthon3
+"""Reads a text file"""
 
 
 def read_file(filename=""):
-    """reads a text file (UTF8) and prints it to stdout
-    Returns none
     """
-    with open(filename, "r", encoding="utf-8") as f:
-        print(f.read(), end="")
+    Reades a text file.
+    Args:
+        filename (str): file to be read
+    """
+    with open(filename, encoding="UTF8") as file_r:
+        file_r.read()
