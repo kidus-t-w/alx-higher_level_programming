@@ -1,4 +1,4 @@
-#!/usr/bin/puthon3
+#!/usr/bin/python3
 """Reads a text file"""
 
 
@@ -8,5 +8,5 @@ def read_file(filename=""):
     Args:
         filename (str): file to be read
     """
-    with open(filename, encoding="utf-8") as file_r:
-        print(file_r.read())
+    with open(filename, encoding="utf-8") as f:
+        print(f.read())
