@@ -16,4 +16,3 @@ def append_write(filename="", text=""):
             for c_num in text_num:
                 char_num += 1
         return char_num
- 
