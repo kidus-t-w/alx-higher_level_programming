@@ -3,9 +3,14 @@
 
 
 class Base:
+    """Base for all the classes"""
     __nb_objects = 0
 
     def __init__(self, id=None):
+        """Initilizing function
+            Args:
+                id (int): id of the instance
+        """
         if id is not None:
             self.id = id
         else:
