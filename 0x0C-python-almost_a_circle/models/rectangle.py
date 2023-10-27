@@ -97,7 +97,7 @@ class Rectangle(Base):
         for i in range(self.__y):
             print("")
         for column in range(self.__height):
-            for indent in range(self.__y):
+            for indent in range(self.x):
                 print(" ", end="")
             for row in range(self.__width):
                 print("#", end="")
