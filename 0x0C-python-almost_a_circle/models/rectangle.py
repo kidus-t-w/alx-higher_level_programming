@@ -27,12 +27,12 @@ class Rectangle(Base):
         if type(x) != int:
             raise TypeError("x must be an integer")
         elif x < 0:
-            raise ValueError("x must be > 0")
+            raise ValueError("x must be >= 0")
         self.__x = x
         if type(y) != int:
             raise TypeError("y must be an integer")
         elif y < 0:
-            raise ValueError("y must be > 0")
+            raise ValueError("y must be >= 0")
         self.__y = y
         id = super().__init__(id)
 
