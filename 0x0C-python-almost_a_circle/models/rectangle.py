@@ -94,10 +94,14 @@ class Rectangle(Base):
 
     def display(self):
         """Prints in stdout the Rectangle instance with the character #"""
+        for i in range(self.__y):
+            print("")
         for column in range(self.__height):
+            for indent in range(self.__y):
+                print(" ", end="")
             for row in range(self.__width):
                 print("#", end="")
-            print()
+            print("")
 
     def __str__(self):
         """Overides the __str__method"""
